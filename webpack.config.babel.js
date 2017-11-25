@@ -34,7 +34,7 @@ if (!isDevelopment) {
 export default {
   entry: resolve('src/main.coffee'),
   output: {
-    path: resolve('docs'),
+    path: resolve('dist'),
     filename: `[name]${(!isDevelopment ? '.[hash]' : '')}.js`,
   },
   module: {
