@@ -15,6 +15,10 @@ To develop on this project, just clone the project and follow these steps:
 
 The production environment is served from github via the branch `gh-pages`. See `bin/deploy` script.
 
+## Contribution
+
+Yes, please! :-) See the [little guide](CONTRIBUTING.md).
+
 ## License
 
 [MIT](LICENSE).
