@@ -2,9 +2,5 @@
 
 set -ex
 
-# Remove dist folder to make sure we do not have any out-of-date
-# files deployed.
-[[ -d "dist" ]] && { rm -rf dist; }
-
 yarn run build
 yarn push-dir --dir=dist --branch=gh-pages

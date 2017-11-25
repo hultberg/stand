@@ -16,6 +16,7 @@
     "immediate": "^3.2.3",
     "node-sass": "^4.7.2",
     "push-dir": "^0.4.1",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "vue": "^2.5.8",
@@ -26,7 +27,7 @@
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.config.babel.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.config.babel.js"
+    "build": "rimraf dist/ && cross-env NODE_ENV=production webpack --config build/webpack.prod.config.babel.js",
+    "dev": "rimraf dist/ && cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.config.babel.js"
   }
 }
