@@ -17,4 +17,4 @@ The production environment is served from github via the branch `gh-pages`. See 
 
 ## License
 
-MIT, see [LICENSE].
+[MIT](LICENSE).
