@@ -60,9 +60,7 @@ export default
     initTimer: -> @timeLeft = @maxTimeSeconds
 
     startTimer: ->
-      console.log 'starting timer'
       @$emit 'timer-start'
-      console.log 'emitted event?'
       @stopTimer()
       @currentTimerInterval = setInterval(@handleStopwatch.bind(@), (1 * 1000))
 
